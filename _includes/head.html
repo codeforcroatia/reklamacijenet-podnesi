@@ -10,7 +10,7 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <title>
-    {% if page.title == "Home" %}
+    {% if page.title == "Početna" %}
       {{ site.title }} &middot; {{ site.tagline }}
     {% else %}
       {{ page.title }} &middot; {{ site.title }}
@@ -40,7 +40,7 @@
   <script src="/assets/js/jquery.magnific-popup.min.js"></script>
   <script src="/assets/js/app.js"></script>
 
-  {% if page.title == "Home" %}
+  {% if page.layout == "master" %}
   <!-- Add background-image -->
     <script>
 
