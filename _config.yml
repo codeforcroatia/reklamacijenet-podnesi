@@ -20,8 +20,6 @@ baseurl:          ''
 navigation:
 - text: Početna
   url: /
-- text: Zagrebački holding
-  url: /zgh/
 - text: Popis svih
   url: /list/
 - text: Tagovi
