@@ -19,7 +19,7 @@ background:	true
 			    {% for otag in post.categories %}
                             {% if otag == 'ZGH' %}
  			<div class="col-md-4 col-sm-6 col-xs-12">
-				<a href="{{ post.eurl }}" title="Go to {{ post.title }}" target="_blank">
+				<a href="{{ post.ext }}" title="Go to {{ post.title }}" target="_blank">
 					<div class="tile {{ page.tile-color }}">
 						<h2 class="title">{{ post.title }}</h2>
 						<p>{{ post.description | strip_html | truncatewords: 10 }}</p>
