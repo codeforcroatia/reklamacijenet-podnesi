@@ -16,7 +16,7 @@ background: 	true
 		<div class="row">
 			<div class="col-md-4 col-sm-6 col-xs-12">
 				{% for post in site.posts limit:1 %}
-				<a href="{{post.eurl}}" title="Posljednje dodano">
+				<a href="{{post.ext}}" title="Posljednje dodano">
 					<div class="tile red">
 						<h3 class="title">Posljednje dodano</h3>
 						<h4 class="title">{{ post.title }}</h4>
@@ -47,7 +47,7 @@ background: 	true
 			<div class="col-md-4 col-sm-6 col-xs-12">
 				{% for post in site.posts %}
 					{% if post.featured == true %}
-					<a href="{{post.eurl}}" title="Istaknuto">
+					<a href="{{post.ext}}" title="Istaknuto">
 						<div class="tile orange">
 							<h3 class="title">Ističemo</h3>
 							<h4 class="title">{{ post.title }}</h4>
