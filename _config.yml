@@ -7,7 +7,7 @@ highlighter: rouge
 gems: [jekyll-paginate]
 
 # Permalinks
-permalink:        /blog/:year/:month/:day/:title
+permalink:        /list/:year/:month/:day/:title
 
 # Setup
 title:            'Predlošci za Reklamacije.net'
@@ -59,7 +59,7 @@ txtpenhandler:
 
 # Blog Configurations
 paginate: 10 # Posts per page on the blog index
-paginate_path: '/blog/page:num'
+paginate_path: '/list/page:num'
 destination: ./_site
 
 # Custom vars
