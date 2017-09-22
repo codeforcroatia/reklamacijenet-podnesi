@@ -13,29 +13,30 @@ description: Predlošci za prigovore
 	</header>
 	<nav>
 		<div class="row">
-			{% for post in posts %}
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				{% for post in site.posts limit:1 %}
+				<a href="{{post.eurl}}" title="Posljednje dodano">
+					<div class="tile red">
+						<h3 class="title">Posljednje dodano</h3>
+						<h4 class="title">{{ post.title }}</h4>
+						<p> {{ post.description | strip_html | truncatewords: 10 }}</p>
+					</div>
+				</a>
+				{% endfor %}
+			</div>
+
  			<div class="col-md-4 col-sm-6 col-xs-12">
-				<a href="zgh/" title="About Me">
+				<a href="zgh/" title="Pogledaj prigovore za Zagrebački holding">
 					<div class="tile blue">
-						<h2 class="title">About Me</h2>
-						<p>Hello World, I am {{site.author}}.</p>
+						<h2 class="title">Zagrebački holding</h2>
+						<p>Primjeri prigovora za Zagrebački holding - Čistoća, ZET, Gradska plinara, Zrinjevac, itd</p>
 					</div>
 				</a>
 		        </div>
-			{% endfor %}
+			
 			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="resume/" title="Resume" class="tile red">
+				<a href="http://reklamacije.net/select_authority" title="Pošalji novu reklamaciju" class="tile purple" target="_blank">
 					<i class="icon-rems" style="font-size:8em"></i>
-				</a>
-			</div>
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="blog/" title="Blog"  class="tile orange">
-					<i class="icon-blog" style="font-size:8em"></i>
-				</a>
-			</div>
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="feed.xml" title="RSS Feed" class="tile orange">
-					<i class="icon-rss" style="font-size:8em"></i>
 				</a>
 			</div>
 		</div>
@@ -43,42 +44,11 @@ description: Predlošci za prigovore
 		<div class="row">
 
 			<div class="col-md-4 col-sm-6 col-xs-12">
-				{% for post in site.posts offset:1 limit:1 %}
-				<a href="{{post.url}}" title="Recent Article">
-					<div class="tile green">
-						<h3 class="title">Recent Article</h3>
-						<h4 class="title">{{ post.title }}</h4>
-						<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
-					</div>
-				</a>
-				{% endfor %}
-			</div>
-
-
-			<div class="col-md-4 col-sm-6 col-xs-12">
-				{% for post in site.posts limit:1 %}
-				<a href="{{post.url}}" title="Latest Article">
-					<div class="tile red">
-						<h3 class="title">Latest Article</h3>
-						<h4 class="title">{{ post.title }}</h4>
-						<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
-					</div>
-				</a>
-				{% endfor %}
-			</div>
-
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.stackoverflow}}" title="StackOverflow" class="tile darken" >
-					<i class="icon-skow" style="font-size:8em;color:white"></i>
-				</a>
-			</div>
-
-			<div class="col-md-4 col-sm-6 col-xs-12">
 				{% for post in site.posts %}
 					{% if post.featured == true %}
-					<a href="{{post.url}}" title="Featured Article">
+					<a href="{{post.eurl}}" title="Istaknuto">
 						<div class="tile orange">
-							<h3 class="title">Featured Article</h3>
+							<h3 class="title">Ističemo</h3>
 							<h4 class="title">{{ post.title }}</h4>
 							<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
 						</div>
@@ -98,12 +68,6 @@ description: Predlošci za prigovore
 			</div>
 
 			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.gplus}}" title="Google Plus"  class="tile orange">
-					<i class="icon-gpls" style="font-size:8em"></i>
-				</a>
-			</div>
-
-			<div class="col-md-2 col-sm-3 col-xs-6">
 				<a href="{{site.facebook}}" class="tile blue">
 					<i class="icon-fcbk" style="font-size:8em"></i>
 				</a>
@@ -111,16 +75,10 @@ description: Predlošci za prigovore
 
 			<div class="col-md-2 col-sm-3 col-xs-6">
 
-				<a href="{{site.github}}" title="Github" class="tile purple">
+				<a href="{{site.github}}" title="Github" class="tile darken">
 					<i class="icon-gthb" style="font-size:8em"></i>
 				</a>
 
-			</div>
-
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.linkedin}}" title="LinkedIn" class="tile blue">
-					<i class="icon-lkin" style="font-size:8em"></i>
-				</a>
 			</div>
 		</div>
 	</nav>
