@@ -20,7 +20,7 @@ baseurl:          ''
 navigation:
 - text: Početna
   url: /
-- text: Popis svih
+- text: Popis
   url: /list/
 - text: Tagovi
   url: /tags/
