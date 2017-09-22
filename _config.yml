@@ -10,32 +10,28 @@ gems: [jekyll-paginate]
 permalink:        /blog/:year/:month/:day/:title
 
 # Setup
-title:            'Jekyll Metro'
-tagline:          'A Metro theme for Jekyll'
-description:      'A Sample blog using Jekyll Metro'
-url:              'http://dev.codeforcroatia.org/JekyllMetro'
+title:            'Predlošci za Reklamacije.net'
+tagline:          'Pomažemo vam u pisanju i slanju reklamacija'
+description:      'Na ovoj stranici pronaći ćete pripremljene predloške za slanje reklamacija'
+url:              'http://podnesi.reklamacije.net'
 baseurl:          ''
 
 # Navigation
 navigation:
-- text: About
-  url: /about/
-- text: Resume
-  url: /resume/
-- text: ZGH
+- text: Početna
+  url: /
+- text: Zagrebački holding
   url: /zgh/
-- text: Blog
-  url: /blog/
-- text: Tags
+- text: Popis svih
+  url: /list/
+- text: Tagovi
   url: /tags/
-- text: Archive
+- text: Arhiva
   url : /archive/
-- text: Search
-  url: /search/
 
 
 # Author Details
-author:         'Abdel Raoof Olakara'
+author:         'Code for Croatia'
 
 #Social Media links (Use complete URL except for email)
 dribbble:
@@ -58,10 +54,10 @@ gahandler: 'UA-xxxxxxxxx-x'
 footersvg: 'true'
 
 # Disqus
-disqushandler: 'xyz'
+disqushandler:
 
 # txtpen
-txtpenhandler: 'xyz'
+txtpenhandler:
 
 # Blog Configurations
 paginate: 10 # Posts per page on the blog index
