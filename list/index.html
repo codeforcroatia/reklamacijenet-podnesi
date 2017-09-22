@@ -39,20 +39,20 @@ bloghome: true
             <div class="row">
               <div class="col-sm-6 col-xs-6 text-left">
                   {% if paginator.next_page %}
-                    <a class="btn btn-orange" href="{{paginator.next_page_path}}">← Older</a>
+                    <a class="btn btn-orange" href="{{paginator.next_page_path}}">← Starije</a>
                   {% else %}
-                    <span class="btn btn-orange disabled">← Older</span>
+                    <span class="btn btn-orange disabled">← Starije</span>
                   {% endif %}
               </div>
               <div class="col-sm-6 col-xs-6 text-right">
                   {% if paginator.previous_page %}
                     {% if paginator.page == 2 %}
-                    <a class="btn btn-orange" href="/blog/">Newer →</a>
+                    <a class="btn btn-orange" href="/list/">Novije →</a>
                     {% else %}
-                    <a class="btn btn-orange" href="{{paginator.previous_page_path}}">Newer →</a>
+                    <a class="btn btn-orange" href="{{paginator.previous_page_path}}">Novije →</a>
                     {% endif %}
                   {% else %}
-                    <span class="btn btn-orange disabled">Newer →</span>
+                    <span class="btn btn-orange disabled">Novije →</span>
                   {% endif %}
               </div>
             </div>
