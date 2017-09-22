@@ -24,7 +24,7 @@ navigation:
   url: /list/
 - text: Tagovi
   url: /tags/
-- text: Arhiva
+- text: Dnevnik
   url : /archive/
 
 
