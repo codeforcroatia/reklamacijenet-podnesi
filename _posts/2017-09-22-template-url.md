@@ -8,6 +8,4 @@ eurl:         http://reklamacije.net
 description:  Template for reporting something via IPZ
 ---
 
-Idite na [ovaj link][1] kako biste poslali prigovor.
-
-[1]: {{post.eurl}}
+Idite na [ovaj link][{{post.eurl}}] kako biste poslali prigovor.
