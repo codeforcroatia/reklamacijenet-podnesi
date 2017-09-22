@@ -27,15 +27,20 @@ layout: master
       </article>
       
       <div class="row">
-        <div class="col-sm-12 col-xs-12 text-center">
-          Idite na <a href="{{ post.eurl }}">ovaj link</a> kako biste poslali prigovor. <br><br>
-        	<a class="btn btn-green" href="{{page.eurl}}">Kliknite za slanje prigovora</a>
+        <div class="col-sm-4 col-xs-4 text-center">
+        	<a class="btn btn-green" href="{{page.ext}}">Kliknite za slanje prigovora</a>
+        </div>
+        <div class="col-sm-8 col-xs-8 text-left">
+        	<a class="btn btn-default" href="{{ site.github }}/{{ site.project-repository }}/edit/gh-pages/{{ page.path }}" target="_blank">Ispravite predložak</a>
         </div>
       </div>
+      
       <div class="row">
-        <div class="col-sm-12 col-xs-12 text-center">
-          Ukoliko ste pronašli grešku u ovom predlošku na Reklamacije.net, možete je ispraviti putem linka na Githubu - prihvaćamo vaš pull request:<br><br>
-        	<a class="btn btn-default" href="{{ site.github }}/{{ site.project-repository }}/edit/gh-pages/{{ page.path }}" target="_blank">Ispravite predložak</a>
+        <div class="col-sm-4 col-xs-4 text-center">
+          Idite na ovaj link kako biste poslali prigovor.
+        </div>
+        <div class="col-sm-8 col-xs-8 text-left">
+          Ukoliko ste pronašli grešku u ovom predlošku na Reklamacije.net, možete je ispraviti putem linka na Githubu - prihvaćamo vaš pull request.
         </div>
       </div>
 
