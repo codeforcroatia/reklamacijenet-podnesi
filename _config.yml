@@ -57,6 +57,9 @@ disqushandler:
 # txtpen
 txtpenhandler:
 
+# Github
+project-repository: reklamacijenet-prigovori
+
 # Blog Configurations
 paginate: 10 # Posts per page on the blog index
 paginate_path: '/list/page:num'
