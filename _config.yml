@@ -22,7 +22,7 @@ navigation:
   url: /
 - text: Popis
   url: /list/
-- text: Tagovi
+- text: Oznake
   url: /tags/
 - text: Dnevnik
   url : /archive/
