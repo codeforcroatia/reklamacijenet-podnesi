@@ -45,8 +45,11 @@ rss:
 stackoverflow:
 twitter:        'https://twitter.com/codeforcroatia'
 
-# Google Analytics
-gahandler: 'UA-xxxxxxxxx-x'
+# Site analytics
+analytics:
+  provider: google
+  google:
+    id: UA-2846894-4
 
 #if footersvg is 'true' the social media links will be shown top on the copy right in the footer
 footersvg: 'true'
@@ -66,4 +69,4 @@ paginate_path: '/list/page:num'
 destination: ./_site
 
 # Custom vars
-version:          0.10
+version:          0.11
