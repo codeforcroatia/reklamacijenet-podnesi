@@ -4,7 +4,10 @@
   <body>
     {% include mobilemenu.html %}
     {{ content }}
-    {% include analytics.html %}
+    {% case site.analytics.provider %}
+      {% when "google" %}
+        {% include analytics/google.html %}
+    {% endcase %}
     <a href="#" class="scrollToTop icon ic-up"></a>		
   </body>
 </html>
