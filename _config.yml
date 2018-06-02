@@ -7,7 +7,7 @@ highlighter: rouge
 gems: [jekyll-paginate]
 
 # Permalinks
-permalink:        /blog/:year/:month/:day/:title
+permalink:        /list/:year/:month/:day/:title
 
 # Setup
 title:            'Predlošci za Reklamacije.net'
@@ -20,11 +20,11 @@ baseurl:          ''
 navigation:
 - text: Početna
   url: /
-- text: Popis svih
+- text: Popis
   url: /list/
-- text: Tagovi
+- text: Oznake
   url: /tags/
-- text: Arhiva
+- text: Dnevnik
   url : /archive/
 
 
@@ -45,8 +45,11 @@ rss:
 stackoverflow:
 twitter:        'https://twitter.com/codeforcroatia'
 
-# Google Analytics
-gahandler: 'UA-xxxxxxxxx-x'
+# Site analytics
+analytics:
+  provider: google
+  google:
+    id: UA-2846894-4
 
 #if footersvg is 'true' the social media links will be shown top on the copy right in the footer
 footersvg: 'true'
@@ -57,10 +60,13 @@ disqushandler:
 # txtpen
 txtpenhandler:
 
+# Github
+project-repository: reklamacijenet-prigovori
+
 # Blog Configurations
 paginate: 10 # Posts per page on the blog index
-paginate_path: '/blog/page:num'
+paginate_path: '/list/page:num'
 destination: ./_site
 
 # Custom vars
-version:          0.10
+version:          0.11

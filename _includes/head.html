@@ -40,7 +40,7 @@
   <script src="/assets/js/jquery.magnific-popup.min.js"></script>
   <script src="/assets/js/app.js"></script>
 
-  {% if page.layout == "master" %}
+  {% if page.background == true %}
   <!-- Add background-image -->
     <script>
 
@@ -74,4 +74,7 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+
+  <!-- Cookie Consent -->
+  {% include cookieconsent.html %}
 </head>

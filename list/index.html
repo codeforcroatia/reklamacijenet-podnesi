@@ -19,7 +19,7 @@ bloghome: true
                   </a>
                 </h2>
                 <div class="publish-tag">
-                  <span class="fa fa-calendar"></span>&nbsp;PUBLISHED ON {{ post.date | date: "%B %d, %Y" }}
+                  <span class="fa fa-calendar"></span>&nbsp;od {{ post.date | date: "%d.%m.%Y" }}
                 </div>
 		              <div class="tags">
                   {% if post.tags %}

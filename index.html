@@ -1,7 +1,8 @@
 ---
-layout: master
-title: Početna
-description: Predlošci za prigovore
+layout: 	master
+title: 		Početna
+description: 	Predlošci za prigovore
+background: 	true
 ---
 
 <div class="container">
@@ -15,7 +16,7 @@ description: Predlošci za prigovore
 		<div class="row">
 			<div class="col-md-4 col-sm-6 col-xs-12">
 				{% for post in site.posts limit:1 %}
-				<a href="{{post.eurl}}" title="Posljednje dodano">
+				<a href="{{post.ext}}" title="Posljednje dodano">
 					<div class="tile red">
 						<h3 class="title">Posljednje dodano</h3>
 						<h4 class="title">{{ post.title }}</h4>
@@ -34,6 +35,15 @@ description: Predlošci za prigovore
 				</a>
 		        </div>
 			
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="kbc/" title="Pogledaj prigovore za Klinički bolnički centar Zagreb">
+					<div class="tile blue">
+						<h2 class="title">KBC Zagreb</h2>
+						<p>Primjeri reklamacija za Klinički bolnički centar Zagreb</p>
+					</div>
+				</a>
+		        </div>
+			
 			<div class="col-md-2 col-sm-3 col-xs-6">
 				<a href="http://reklamacije.net/select_authority" title="Pošalji novu reklamaciju" class="tile purple" target="_blank">
 					<i class="icon-rems" style="font-size:8em"></i>
@@ -46,7 +56,7 @@ description: Predlošci za prigovore
 			<div class="col-md-4 col-sm-6 col-xs-12">
 				{% for post in site.posts %}
 					{% if post.featured == true %}
-					<a href="{{post.eurl}}" title="Istaknuto">
+					<a href="{{post.ext}}" title="Istaknuto">
 						<div class="tile orange">
 							<h3 class="title">Ističemo</h3>
 							<h4 class="title">{{ post.title }}</h4>
