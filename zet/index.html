@@ -10,7 +10,7 @@ background:	true
 
 	<header class="row">
 	  <div class="col-sm-6 col-md-12" style="margin-top:25px;margin-bottom:25px">
-	    <h1 id="pin">{{page.title}}</h1>
+		  <a href="/"><h1 id="pin">{{site.title}} <small>{{page.title}}</small></h1></a>
 	  </div>
 	</header>
 	<nav>
@@ -22,7 +22,7 @@ background:	true
 				<a href="{{ post.ext }}" title="Go to {{ post.title }}" target="_blank">
 					<div class="tile {{ page.tile-color }}">
 						<h2 class="title">{{ post.title }}</h2>
-						<p>{{ post.description | strip_html | truncatewords: 10 }}</p>
+						<p>{{ post.description | strip_html | truncatewords: 20 }}</p>
 					</div>
 				</a>
  			</div>
