@@ -1,0 +1,33 @@
+---
+layout:		master
+title:		ZET
+description:	List of specific templates
+tile-color:	blue
+---
+
+<div class="container">
+
+	<header class="row">
+	  <div class="col-sm-6 col-md-12" style="margin-top:25px;margin-bottom:25px">
+	    <h1 id="pin">{{page.title}}</h1>
+	  </div>
+	</header>
+	<nav>
+		<div class="row">
+			{% for post in site.posts %}
+			    {% for otag in post.categories %}
+                            {% if otag == 'ZET' %}
+ 			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="{{ post.eurl }}" title="Go to {{ post.title }}" target="_blank">
+					<div class="tile {{ page.tile-color }}">
+						<h2 class="title">{{ post.title }}</h2>
+						<p>{{ post.description | strip_html | truncatewords: 10 }}</p>
+					</div>
+				</a>
+ 			</div>
+                            {% endif %}
+                            {% endfor %}
+			{% endfor %}
+		</div>
+	</nav>
+</div>
