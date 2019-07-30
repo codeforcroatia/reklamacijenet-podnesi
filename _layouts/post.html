@@ -29,28 +29,15 @@ layout: master
       
       <div class="row">
         <div class="col-sm-3 col-xs-3 text-center">
-        	<a class="btn btn-green" href="{{page.ext}}">Kliknite za slanje prigovora</a>
-        </div>
-
-        <div class="col-sm-3 col-xs-3 text-center">
-            {% if page.categories %}
+        	  {% if page.categories %}
              {% for entity in site.entities %}
               {% if page.categories contains entity.page_category %}
-              <a class="btn btn-green" href="{{site.alaveteli.url}}/new/{{entity.slug}}/?title={{page.request_title | url_encode}};body={{page.request_body | url_encode }}&tags={{page.request_tags | url_encode}}+from-template:{{page.sequence}}+podnesi:pisani-prigovor">Kliknite za slanje prigovora (2a)</a>
+              {% assign addressed_to = "Za: " %}
+              <a class="btn btn-green" href="{{site.alaveteli.url}}/new/{{entity.slug}}/?title={{page.request_title | url_encode}};body={{addressed_to | url_encode}}{{entity.name}}%0A%0A%0A{{page.request_body | url_encode }}&tags={{page.request_tags | url_encode}}+from-template:{{page.sequence}}+podnesi:pisani-prigovor">Kliknite za slanje prigovora (2a)</a>
               {% endif %}
              {% endfor %}
             {% endif %}
         </div>
-
-        {% if page.categories %}
-        {% for entity in site.entities %}
-          {% if page.categories contains entity.page_category %}
-          <div class="col-sm-3 col-xs-3 text-center">
-                  <a class="btn btn-green" href="{{site.alaveteli.url | append:'/new/' | append:entity.slug | append:'/?title=' | append:page.request_title | append:';body=' | append:page.request_body | append:'&tags=' | append:page.request_tags | append:'+from-template:' | append:page.sequence | append:'+podnesi:pisani-prigovor'}}">Kliknite za slanje prigovora (2b)</a>
-                </div>
-          {% endif %}
-        {% endfor %}
-        {% endif %}
 
         <div class="col-sm-9 col-xs-9 text-left">
         	Idite na ovaj link kako biste poslali prigovor.
