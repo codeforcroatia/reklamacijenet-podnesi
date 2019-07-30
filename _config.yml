@@ -76,7 +76,7 @@ version:          0.20
 alaveteli:
   url: 'http://reklamacije.net'
   
-entity:
+entities:
   -
       page_category: ZGH
       name: Zagrebački holding

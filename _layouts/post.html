@@ -34,14 +34,14 @@ layout: master
         <div class="col-sm-3 col-xs-3 text-center">
             {% if page.categories %}
 
-              {% for categories in site.entity.page_category %}
+              {% for categories in site.entities.page_category %}
               <a class="btn btn-green" href="{{site.alaveteli.url}}/new/{{site.entity.slug}}/?title={{page.request_title}};body={{page.request_body}}&tags={{page.request_tags}}+from-template:{{page.sequence}}+podnesi:pisani-prigovor">Kliknite za slanje prigovora (2a)</a>
               {% endfor %}
   
             {% endif %}
         </div>
-        {% for entity in site.entity %}
-          {% if site.entity.category == "ZET" %}
+        {% for entity in site.entities %}
+          {% if entity.page_category == "ZET" %}
           <p>EUREKA</p>
           {% endif %}
         {% endfor %}
@@ -59,8 +59,8 @@ layout: master
 
         {% if page.categories %}
 
-              {% for cat in site.entity.page_category %}
-                {% if cat == page.categories %}
+              {% for cat in site.entities %}
+                {% if cat.page_category == page.categories %}
                 <div class="col-sm-3 col-xs-3 text-center">
                   <a class="btn btn-green" href="{{site.alaveteli.url | append:'/new/' | append:cat.slug | append:'/?title=' | append:page.request_title | append:';body=' | append:page.request_body | append:'&tags=' | append:page.request_tags | append:'+from-template:' | append:page.sequence | append:'+podnesi:pisani-prigovor'}}">Kliknite za slanje prigovora (2b)</a>
                 </div>
