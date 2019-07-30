@@ -41,12 +41,11 @@ layout: master
             {% endif %}
         </div>
         {% for cat in site.entity.page_category %}
-        {% if site.entity.page_category == "ZET" %}
-        <p>EUREKA</p>
-        {% endif %}
+          {% if site.entity.page_category == "ZET" %}
+          <p>EUREKA</p>
+          {% endif %}
         {% endfor %}
 
-        {% endif %}
         {% if page.categories %}
 
               {% for cat in site.entity.page_category %}
