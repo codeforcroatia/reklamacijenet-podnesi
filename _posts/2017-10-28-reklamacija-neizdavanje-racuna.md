@@ -4,6 +4,27 @@ title:        Reklamacija za neizdavanje uplatnice
 date:         2017-10-28 00:00:00
 categories:   KBC
 tags:         reklamacija
-ext:          http://reklamacije.net/new/kbc_zagreb/?title=KBC+Zagreb+nije+izdao+uplatnicu+-+za+NAPI%C5%A0I+NAZIV+USLUGE;body=Za:+Klini%C4%8Dki+bolni%C4%8Dki+centar+Zagreb,%20Zagreb%0A%0APo%C5%A1tovani+KBC+Zagreb,%0A%0ADana+DD.MM.GGGG+u+bolnici+NAZIV+BOLNICE+imao+sam+VRSTA+USLUGE.+Medicinska+sestra+na+prijemu+pacijenata+nije+%C5%BEeljela+naplatiti+ra%C4%8Dun+gotovinom+nego+je+inzistirala+da+tro%C5%A1ak+platim+po+uplanici+koji+%C4%87u+dobiti+po%C5%A1tom.%0A%0ANapominjem+da+od+KBC-a+od+dana+posjeta+u+bolnicu+do+danas+nisam+zaprimio+uplatnicu+odnosno+upute+za+pla%C4%87anje+tro%C5%A1ka+participacije.%0A%0AS+obzirom+na+obvezu+izdavanja+ra%C4%8Duna+koja+je+propisana+odredbama+Op%C4%87eg+poreznog+zakona,+kao+i+posebnim+poreznim+propisima,+molim+vas+o%C4%8Ditovanje%3A+%0A1.+kako+sam+mogao+platiti+ra%C4%8Dun+koji+nisam+nikada+dobio+uplatnicu?+%0A2.+za%C5%A1to+KBC+osoblje+ne+%C5%BEeli+naplatiti+ra%C4%8Dun+u+gotovini?+%0A3.+po+kojoj+zakonskoj+osnovi+KBC+osoblje+odbija+zaprimiti+pla%C4%87anje+u+gotovini?+%0A4.+mo%C5%BEe+li+KBC+dostaviti+presliku+ra%C4%8Duna?+%0A5.+za%C5%A1to+KBC+osoblje+ne+izdaje+uplatnice+i+ra%C4%8Dune+odmah+i+daje+na+ruke+pacijentu?%0A%0AObveza+izdavanja+ra%C4%8Duna+propisana+je+odredbom+%C4%8Dlanka+54.+Op%C4%87eg+poreznog+zakona+%28Narodne+novine,+broj%3A+147%2F08,+18%2F11,+78%2F12,+136%2F12,+73%2F13%29+prema+kojoj+su+svi+porezni+obveznici+du%C5%BEni+izdavati+ra%C4%8Dune+te+voditi+poslovne+knjige+i+evidencije+radi+oporezivanja+prema+propisima+kojima+se+ure%C4%91uje+pojedina+vrsta+poreza.+Nadalje,+obveza+izdavanja+ra%C4%8Duna+propisana+je+i+posebnim+poreznim+propisima,+a+kako+je+opisano+u+Uputi+Porezne+uprave%3A+%0Ahttps%3A%2F%2Fwww.porezna-uprava.hr%2FPdviEu%2FDocuments%2FUputa%20o%20obvezi%20izdavanja%20ra%C4%8Duna%20prema%20propisima%20u%20nadle%C5%BEnosti%20PU%20%2824.07.2013.%29.pdf%0A%0ALijep+pozdrav%0AVA%C5%A0E%20IME%20I%20PREZIME&tags=racun-neizdavanje-uplatnice-naplata-racuna+from-template:3+podnesi:pisani-prigovor
+sequence:	  3
 description:  Reklamacija jer nisu izdali specifikaciju troškova ili uplatnicu a naplatili su uslugu
+request_title: 
+request_body:  |
+  Poštovani KBC Zagreb,
+  
+  Dana DD.MM.GGGG u bolnici NAZIV BOLNICE imao sam VRSTA USLUGE. Medicinska sestra na prijemu pacijenata nije željela naplatiti račun gotovinom nego je inzistirala da trošak platim po uplanici koji ću dobiti poštom.
+  
+  Napominjem da od KBC-a od dana posjeta u bolnicu do danas nisam zaprimio uplatnicu odnosno upute za plaćanje troška participacije.
+  
+  S obzirom na obvezu izdavanja računa koja je propisana odredbama Općeg poreznog zakona, kao i posebnim poreznim propisima, molim vas očitovanje: 
+  1. kako sam mogao platiti račun koji nisam nikada dobio uplatnicu? 
+  2. zašto KBC osoblje ne želi naplatiti račun u gotovini? 
+  3. po kojoj zakonskoj osnovi KBC osoblje odbija zaprimiti plaćanje u gotovini? 
+  4. može li KBC dostaviti presliku računa? 
+  5. zašto KBC osoblje ne izdaje uplatnice i račune odmah i daje na ruke pacijentu?
+  
+  Obveza izdavanja računa propisana je odredbom članka 54. Općeg poreznog zakona (Narodne novine, broj: 147/08, 18/11, 78/12, 136/12, 73/13) prema kojoj su svi porezni obveznici dužni izdavati račune te voditi poslovne knjige i evidencije radi oporezivanja prema propisima kojima se uređuje pojedina vrsta poreza. Nadalje, obveza izdavanja računa propisana je i posebnim poreznim propisima, a kako je opisano u Uputi Porezne uprave: 
+  https://www.porezna-uprava.hr/PdviEu/Documents/Uputa o obvezi izdavanja računa prema propisima u nadležnosti PU (24.07.2013.).pdf
+  
+  Lijep pozdrav
+
+request_tags: "racun-neizdavanje-uplatnice naplata-racuna"
 ---
