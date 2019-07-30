@@ -35,9 +35,7 @@ layout: master
         <div class="col-sm-3 col-xs-3 text-center">
             {% if page.categories %}
              {% for entity in site.entities %}
-             {% assign a = entity.page_category %}
-             {% assign b = page.categories %}
-              {% if a contans b %}
+              {% if entity.page_category contans "ZET" %}
               <a class="btn btn-green" href="{{site.alaveteli.url}}/new/{{entity.slug}}/?title={{page.request_title | url_encode}};body={{page.request_body | url_encode }}&tags={{page.request_tags | url_encode}}+from-template:{{page.sequence}}+podnesi:pisani-prigovor">Kliknite za slanje prigovora (2a)</a>
               {% endif %}
              {% endfor %}
