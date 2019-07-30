@@ -50,7 +50,9 @@ layout: master
           <h2>Programeri</h2>
           <ul>
           {% for dev in site.devs %}
+            {% if dev.name == "Miroslav Schlossberg" %}
             <li><a {% if dev.github %} href="https://github.com/{{ dev.github }}" rel="external"{% endif %}>{{ dev.name }}</a></li>
+            {% endif %}
           {% endfor %}
           </ul>
         {% endif %}
