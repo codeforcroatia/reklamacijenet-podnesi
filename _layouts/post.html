@@ -35,7 +35,8 @@ layout: master
         <div class="col-sm-3 col-xs-3 text-center">
             {% if page.categories %}
              {% for entity in site.entities %}
-              {% if entity.page_category == "ZET" %}
+
+              {% if page.categories == entity.page_category %}
               <a class="btn btn-green" href="{{site.alaveteli.url}}/new/{{entity.slug}}/?title={{page.request_title | url_encode}};body={{page.request_body | url_encode }}&tags={{page.request_tags | url_encode}}+from-template:{{page.sequence}}+podnesi:pisani-prigovor">Kliknite za slanje prigovora (2a)</a>
               {% endif %}
              {% endfor %}
@@ -44,7 +45,7 @@ layout: master
 
         {% if page.categories %}
         {% for entity in site.entities %}
-          {% if entity.page_category == "ZET" %}
+          {% if page.categories contains entity.page_category %}
           <div class="col-sm-3 col-xs-3 text-center">
                   <a class="btn btn-green" href="{{site.alaveteli.url | append:'/new/' | append:entity.slug | append:'/?title=' | append:page.request_title | append:';body=' | append:page.request_body | append:'&tags=' | append:page.request_tags | append:'+from-template:' | append:page.sequence | append:'+podnesi:pisani-prigovor'}}">Kliknite za slanje prigovora (2b)</a>
                 </div>
