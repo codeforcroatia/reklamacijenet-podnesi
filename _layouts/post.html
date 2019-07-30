@@ -30,6 +30,14 @@ layout: master
       <div class="row">
         <div class="col-sm-3 col-xs-3 text-center">
         	<a class="btn btn-green" href="{{page.ext}}">Kliknite za slanje prigovora</a>
+            {% if page.categories %}
+
+              {% for categories in site.entity.page_category %}
+              <a class="btn btn-green" href="{{site.alaveteli.baseurl}}/new/{{site.entity.slug}}//?title={{page.request_title}};body={{page.request_body}}&tags={{page.request_tags}}+from-template:{{page.sequence}}+podnesi:pisani-prigovor">Kliknite za slanje prigovora (2a)</a>
+              {% endfor %}
+  
+            {% endif %}
+          <a class="btn btn-green" href="{{site.alaveteli.baseurl | append:'/new/' | append:site.entity.slug | append:'/?title=' | append:page.request_title | append:';body=' | append:page.request_body | append:'&tags=' | append:page.request_tags | append:'+from-template:' | append:page.sequence | append:'+podnesi:pisani-prigovor'">Kliknite za slanje prigovora (2b)</a>
         </div>
         <div class="col-sm-9 col-xs-9 text-left">
         	Idite na ovaj link kako biste poslali prigovor.

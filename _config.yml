@@ -61,12 +61,31 @@ disqushandler:
 txtpenhandler:
 
 # Github
-project-repository: reklamacijenet-prigovori
+project-repository: reklamacijenet-podnesi
 
 # Blog Configurations
 paginate: 10 # Posts per page on the blog index
 paginate_path: '/list/page:num'
 destination: ./_site
 
-# Custom vars
-version:          0.11
+# Custom variables
+version:          0.20
+
+## Alaveteli collection
+
+alaveteli:
+  baseurl: 'http://reklamacije.net'
+  
+entity:
+  -
+      page_category: ZGH
+      name: Zagrebački holding
+      slug: zagrebacki_holding_doo
+  -
+      page_category: ZET
+      name: Zagrebački električni tramvaj
+      slug: zet
+  -
+      page_category: KBC
+      name: Klinički bolnički centar Zagreb
+      slug: kbc_zagreb
