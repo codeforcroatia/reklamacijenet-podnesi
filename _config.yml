@@ -89,3 +89,17 @@ entity:
       page_category: KBC
       name: Klinički bolnički centar Zagreb
       slug: kbc_zagreb
+
+devs:
+  -
+      name: Sam Smith
+      github: smth
+  -
+      name: Rufus Pollock
+      github: rgrp
+  -
+      name: Paul Walsh
+      github: pwalsh
+  -
+      name: Miroslav Schlossberg
+      github: schlos

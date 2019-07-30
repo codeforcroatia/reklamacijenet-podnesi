@@ -46,6 +46,15 @@ layout: master
           {% endif %}
         {% endfor %}
 
+        {% if site.devs %}
+          <h2>Programeri</h2>
+          <ul>
+          {% for dev in site.devs %}
+            <li><a {% if dev.github %} href="https://github.com/{{ dev.github }}" rel="external"{% endif %}>{{ dev.name }}</a></li>
+          {% endfor %}
+          </ul>
+        {% endif %}
+
         {% if page.categories %}
 
               {% for cat in site.entity.page_category %}
