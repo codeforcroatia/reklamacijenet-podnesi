@@ -40,8 +40,8 @@ layout: master
   
             {% endif %}
         </div>
-        {% for category in site.entity.page_category %}
-          {% if category == "ZET" %}
+        {% for entity in site.entity %}
+          {% if entity.category == "ZET" %}
           <p>EUREKA</p>
           {% endif %}
         {% endfor %}
