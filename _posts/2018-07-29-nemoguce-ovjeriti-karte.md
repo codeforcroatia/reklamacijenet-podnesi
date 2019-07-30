@@ -11,7 +11,7 @@ ext:          http://reklamacije.net/new/zet/?title=;body=Za:+Zagreba%C4%8Dki+el
 
 request_title: 
 request_body:  |
-	Pozivajući se na članak 10. Zakona o zaštiti potrošača (NN 41/14) upućujem Vam pisani prigovor, koji se odnosi na:
+	"Pozivajući se na članak 10. Zakona o zaštiti potrošača (NN 41/14) upućujem Vam pisani prigovor, koji se odnosi na:
 
 	Predmet: Nemogućnost ovjere karte u javnom vozilu ZET-a
 	Datum vožnje: DATUM VOŽNJE
@@ -40,6 +40,6 @@ request_body:  |
 
 	LINK NA DATOTEKU AKO IMATE ZA PRILOŽITI (NPR. UPLODAJTE NA http://drive.google.com, I OVDJE UMETNITE LINK
 
-	PRIJE SLANJA, UKLONITE SVE UPUTE PISANE VELIKOM SLOVIMA KOJE VIŠE NE TREBAJU
-request_tags: "zet-voznja-naplata-ovjera-karta podnesi:pisani-prigovor"
+	PRIJE SLANJA, UKLONITE SVE UPUTE PISANE VELIKOM SLOVIMA KOJE VIŠE NE TREBAJU"
+request_tags: "zet-voznja-naplata-ovjera-karta"
 ---
