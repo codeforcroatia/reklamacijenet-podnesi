@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        Nije moguće ovjeriti kartu
+title:        Klima ne radi ZET
 date:         2018-07-29 00:00:00
 categories:   ZET
 tags:         prigovor

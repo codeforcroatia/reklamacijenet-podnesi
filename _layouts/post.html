@@ -40,10 +40,17 @@ layout: master
   
             {% endif %}
         </div>
+        {% for cat in site.entity.page_category %}
+        {% if site.entity.page_category == "ZET" %}
+        <p>EUREKA</p>
+        {% endif %}
+        {% endfor %}
+
+        {% endif %}
         {% if page.categories %}
 
               {% for cat in site.entity.page_category %}
-                {% if site.entity.page_category == page.categories %}
+                {% if cat == page.categories %}
                 <div class="col-sm-3 col-xs-3 text-center">
                   <a class="btn btn-green" href="{{site.alaveteli.url | append:'/new/' | append:cat.slug | append:'/?title=' | append:page.request_title | append:';body=' | append:page.request_body | append:'&tags=' | append:page.request_tags | append:'+from-template:' | append:page.sequence | append:'+podnesi:pisani-prigovor'}}">Kliknite za slanje prigovora (2b)</a>
                 </div>
