@@ -74,7 +74,7 @@ version:          0.20
 ## Alaveteli collection
 
 alaveteli:
-  baseurl: 'http://reklamacije.net'
+  url: 'http://reklamacije.net'
   
 entity:
   -
