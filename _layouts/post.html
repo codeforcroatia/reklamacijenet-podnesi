@@ -33,7 +33,7 @@ layout: master
              {% for entity in site.entities %}
               {% if page.categories contains entity.page_category %}
               {% assign addressed_to = "Za: " %}
-              <a class="btn btn-green" href="{{site.alaveteli.url}}/new/{{entity.slug}}/?title={{page.request_title | url_encode}};body={{addressed_to | url_encode}}{{entity.name}}%0A%0A%0A{{page.request_body | url_encode }}&tags={{page.request_tags | url_encode}}+from-template:{{page.sequence}}+podnesi:pisani-prigovor">Kliknite za slanje prigovora (2a)</a>
+              <a class="btn btn-green" href="{{site.alaveteli.url}}/new/{{entity.slug}}/?title={{page.request_title | url_encode}};body={{addressed_to | url_encode}}{{entity.name}}%0A%0A{{page.request_body | url_encode }}&tags={{page.request_tags | url_encode}}+from-template:{{page.sequence}}+podnesi:pisani-prigovor">Kliknite za slanje prigovora</a>
               {% endif %}
              {% endfor %}
             {% endif %}

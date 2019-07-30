@@ -17,13 +17,13 @@ background:	true
 		<div class="row">
 			{% for post in site.posts %}
 			    {% for otag in post.categories %}
-                            {% if otag == 'ZET' %}
+                            {% if otag contains page.title %}
  			<div class="col-md-4 col-sm-6 col-xs-12">
 				{% if post.categories %}
                  {% for entity in site.entities %}
                   {% if post.categories contains entity.page_category %}
                    {% assign addressed_to = "Za: " %}
-                   <a href="{{{site.alaveteli.url}}/new/{{entity.slug}}/?title={{post.request_title | url_encode}};body={{addressed_to | url_encode}}{{entity.name}}%0A%0A%0A{{post.request_body | url_encode }}&tags={{post.request_tags | url_encode}}+from-template:{{post.sequence}}+podnesi:pisani-prigovor" title="Go to {{ post.title }}" target="_blank">
+                   <a href="{{{site.alaveteli.url}}/new/{{entity.slug}}/?title={{post.request_title | url_encode}};body={{addressed_to | url_encode}}{{entity.name}}%0A%0A{{post.request_body | url_encode }}&tags={{post.request_tags | url_encode}}+from-template:{{post.sequence}}+podnesi:pisani-prigovor" title="Go to {{ post.title }}" target="_blank">
                   {% endif %}
                  {% endfor %}
                 {% endif %}
