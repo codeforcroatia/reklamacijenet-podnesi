@@ -30,6 +30,8 @@ layout: master
       <div class="row">
         <div class="col-sm-3 col-xs-3 text-center">
         	<a class="btn btn-green" href="{{page.ext}}">Kliknite za slanje prigovora</a>
+        </div>
+        <div class="col-sm-3 col-xs-3 text-center">
             {% if page.categories %}
 
               {% for categories in site.entity.page_category %}
@@ -37,6 +39,8 @@ layout: master
               {% endfor %}
   
             {% endif %}
+        </div>
+        <div class="col-sm-3 col-xs-3 text-center">
           <a class="btn btn-green" href="{{site.alaveteli.baseurl | append:'/new/' | append:site.entity.slug | append:'/?title=' | append:page.request_title | append:';body=' | append:page.request_body | append:'&tags=' | append:page.request_tags | append:'+from-template:' | append:page.sequence | append:'+podnesi:pisani-prigovor'">Kliknite za slanje prigovora (2b)</a>
         </div>
         <div class="col-sm-9 col-xs-9 text-left">
