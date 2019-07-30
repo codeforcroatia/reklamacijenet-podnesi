@@ -82,7 +82,7 @@ entity:
       name: Zagrebački holding
       slug: zagrebacki_holding_doo
   -
-      page_category: ZET
+      page_category: 'ZET'
       name: Zagrebački električni tramvaj
       slug: zet
   -
